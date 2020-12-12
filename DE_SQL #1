@@ -1,0 +1,3 @@
+SELECT userId, AVG(duration) as average from sessions
+GROUP BY userId
+HAVING COUNT(userId)>1 ;
